@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload</title>
+</head>
+<body>
+<!--method必须是post,enctype="multipart/form-data"表示提交的数据是二进制文件-->
+<!--需要提供type="file"字段进行上传-->
+<form action="uploadPhoto" method="post" enctype="multipart/form-data">
+    英雄名称:<input type="text" name="heroName"/><br>
+    上传头像:<input type="file" name="filepath"/><br>
+    <input type="submit" value="上传">
+</form>
+</body>
+</html>
